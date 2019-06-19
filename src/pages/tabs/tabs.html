@@ -1,5 +1,13 @@
 <ion-tabs>
-  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>
-  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></ion-tab>
-  <ion-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>
+  <ion-tab [root]="tab1Root" tabTitle="Produtos" tabIcon="md-cube"></ion-tab>
+  <ion-tab></ion-tab> 
+  <ion-tab [root]="tab3Root" tabTitle="Estabelecimentos" tabIcon="pin"></ion-tab>
 </ion-tabs>
+
+<ion-fab bottom center>
+  <button ion-fab (click)="denunciar()" style="background: linear-gradient(to right, #f12711, #f5af19);">
+    <ion-icon name='md-alert' style="font-size: 30px;"></ion-icon>
+  </button>
+</ion-fab>
+
+

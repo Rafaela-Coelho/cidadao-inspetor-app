@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar style="background: linear-gradient(to right, #56ccf2, #2f80ed);">
+    <ion-title style="text-align: center">
+      <img width="150" height="30" src="assets/imgs/logo-top.png" />
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-label class="titulo">
+    {{estabelecimento_dados.nome}}
+  </ion-label>
+
+  <ion-slides class="slides" pager="true" loop="true">
+    <ion-slide>
+      <img style="height: 260px" src="{{estabelecimento_dados.img}}">
+      <div style="clear: both; height:30px;"></div>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-label>
+    {{estabelecimento_dados.irregularidas}}
+  </ion-label>
+
+  <ion-label class="sub-titulo ">
+    Comentários
+  </ion-label>
+
+  <ion-label style="padding-left: 10px;">
+    {{estabelecimento_dados.comentario}}
+  </ion-label>
+
+
+
+</ion-content>

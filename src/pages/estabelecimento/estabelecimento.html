@@ -1,0 +1,77 @@
+<ion-header>
+    <ion-navbar style="background: linear-gradient(to right, #56ccf2, #2f80ed);">
+      <ion-title style="text-align: center">
+        <img width="150" height="30" src="assets/imgs/logo-top.png" />
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+<ion-content>
+ <ion-card class="card-map">
+   <ion-card-content class="card-map-content">
+     <img src="../assets/imgs/maps.png" width="370" height="240"/>
+   </ion-card-content>
+ </ion-card>
+
+ <ion-grid>
+  <ion-row justify-content-center>
+    <form>
+      <ion-list>
+        <ion-row>
+          <ion-col col-9>
+              <ion-item style="margin-top: 5%" class="input-line">
+                  <ion-input type="text" placeholder="Nome ou CNPJ..."></ion-input>
+                </ion-item>
+          </ion-col>
+          <ion-col col-3 style="padding-top: 12px;">
+              <button ion-button class="button-search" (click)="verEstabelecimento()">
+                  <ion-icon name="md-search"></ion-icon>
+                </button>
+            </ion-col>
+        </ion-row>
+        
+      </ion-list>
+    </form>
+  </ion-row>
+
+  <ion-grid style="margin-top:8px;">
+    <ion-row>
+      <ion-col class="card-round card-1" style="margin-right: 5px">
+        <ion-row class="align-flex-end">
+          <span class="dado-principal-dashboard" style="font-size: 2rem">RH Consultoria</span>
+        </ion-row>
+        <ion-row class="align-flex-end">
+          <span class="dado-dashboard" style="font-size: 1.2rem">970 denúncias</span>
+        </ion-row>
+      </ion-col>
+      <ion-col class="card-round card-2" style="margin-left: 5px">
+        <ion-row class="align-flex-end">
+          <span class="dado-principal-dashboard" style="font-size: 2rem">Hamburgueria Zé</span>
+        </ion-row>
+        <ion-row class="align-flex-end">
+          <span class="dado-dashboard" style="font-size: 1.2rem">830 denúncias</span>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col class="card-round card-3" style="margin-right: 5px">
+          <ion-row class="align-flex-end">
+            <span class="dado-principal-dashboard" style="font-size: 2rem">Farmácia Saúde</span>
+          </ion-row>
+          <ion-row class="align-flex-end">
+            <span class="dado-dashboard" style="font-size: 1.2rem">517 denúncias</span>
+          </ion-row>
+        </ion-col>
+        <ion-col class="card-round card-4" style="margin-left: 5px">
+          <ion-row class="align-flex-end">
+            <span class="dado-principal-dashboard" style="font-size: 2rem">Padaria Oscar</span>
+          </ion-row>
+          <ion-row class="align-flex-end">
+            <span class="dado-dashboard" style="font-size: 1.2rem">301 denúncias</span>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-grid>
+</ion-content>

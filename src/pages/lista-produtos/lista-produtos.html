@@ -1,0 +1,16 @@
+
+<ion-header>
+  <ion-navbar>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let produto of lista_produtos; let i = index" class="card-produto" (click)="alertInfo(produto.fabricante, produto.ano_notificacao)">
+      <ion-card-content class="content-transparent">
+          <ion-row>
+                <span >{{produto.nome}}</span><br />
+          </ion-row>
+        </ion-card-content>
+  </ion-card>
+
+</ion-content>

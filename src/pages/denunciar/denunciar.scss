@@ -1,0 +1,38 @@
+page-denunciar {
+
+  .list-md .item[no-lines],
+  .list-ios .item[no-lines] {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #c8c7cc;
+  }
+
+  .list-md .item[no-lines].invalid,
+  .list-ios .item[no-lines].invalid {
+    border: 1px solid #ff0000;
+  }
+
+  .item-input .label-md,
+  .item-select .label-md,
+  .item-datetime .label-md,
+  .item-input .label-ios,
+  .item-select .label-ios,
+  .item-datetime .label-ios {
+    color: #000;
+  }
+
+  .titulo {
+    color: #56C0FF;
+    font-size: 16px;
+  }
+
+  .btn-enviar {
+    display: block;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background: #56C0FF;
+    color: #fff;
+    border-radius: 25px;
+  }
+}

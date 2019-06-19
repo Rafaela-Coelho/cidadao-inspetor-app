@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+    <ion-card *ngFor="let estabelecimento of lista_estabelecimentos; let i = index" class="card-estabelecimento" (click)="verEstabelecimento(estabelecimento)">
+        <ion-card-content class="content-transparent">
+            <ion-row>
+                  <span >{{estabelecimento.nome}}</span><br />
+            </ion-row>
+          </ion-card-content>
+    </ion-card>
+</ion-content>

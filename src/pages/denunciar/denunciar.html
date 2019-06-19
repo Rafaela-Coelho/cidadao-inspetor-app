@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-navbar style="background: linear-gradient(to right, #56ccf2, #2f80ed);">
+    <ion-title style="text-align: center;">
+      <span style="color: #FFF;">Denunciar</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content margin-top="5px">
+      <form [formGroup]="denuncia_form">
+        <ion-label class="titulo">Dados para contato</ion-label>
+        <ion-list>
+          <ion-item no-lines>
+            <ion-label></ion-label>
+            <ion-input type="text" placeholder="Nome" formControlName="nome_contato" autofocus></ion-input>
+          </ion-item>
+          <ion-item no-lines>
+            <ion-label></ion-label>
+            <ion-input type="text" placeholder="CPF/CNPJ" formControlName="doc_contato" ></ion-input>
+          </ion-item>
+          <ion-item no-lines>
+            <ion-label></ion-label>
+            <ion-input type="text" placeholder="CEP" formControlName="cep_contato" ></ion-input>
+          </ion-item>
+          <ion-item no-lines>
+            <ion-label></ion-label>
+            <ion-input type="text" placeholder="Endereço" formControlName="endereco_contato" ></ion-input>
+          </ion-item>
+          <ion-item no-lines>
+            <ion-label></ion-label>
+            <ion-input type="text" placeholder="Telefone" formControlName="telefone_contato" ></ion-input>
+          </ion-item>
+          <ion-item no-lines>
+            <ion-label></ion-label>
+            <ion-input type="text" placeholder="E-mail" formControlName="email_contato" ></ion-input>
+          </ion-item>
+          <ion-item no-lines>
+            <ion-label>Caso considere seu assunto extremamente confidencial, clique em "Sim".
+              Neste caso, manteremos seus dados em sigilo. </ion-label>
+
+            <ion-select okText="OK" cancelText="Cancela">
+              <ion-option value="1">Sim</ion-option>
+              <ion-option value="0">Não</ion-option>
+            </ion-select>
+
+          </ion-item>
+        </ion-list>
+
+        <br />
+
+        <ion-label class="titulo">Dados do reclamado/denunciado</ion-label>
+        <ion-list>
+          <ion-item no-lines>
+            <ion-label></ion-label>
+            <ion-input type="text" placeholder="Nome" formControlName="nome_denunciado" ></ion-input>
+          </ion-item>
+          <ion-item no-lines>
+            <ion-label></ion-label>
+            <ion-input type="text" placeholder="CPF/CNPJ" formControlName="doc_denunciado" ></ion-input>
+          </ion-item>
+          <ion-item no-lines>
+            <ion-label></ion-label>
+            <ion-input type="text" placeholder="CEP" formControlName="cep_denunciado" ></ion-input>
+          </ion-item>
+          <ion-item no-lines>
+            <ion-label></ion-label>
+            <ion-input type="text" placeholder="Endereço" formControlName="endereco_denunciado"></ion-input>
+          </ion-item>
+          <ion-item no-lines>
+            <ion-label></ion-label>
+            <ion-input type="text" placeholder="Telefone" formControlName="telefone_denunciado"></ion-input>
+          </ion-item>
+          <ion-item no-lines>
+            <ion-label></ion-label>
+            <ion-input type="text" placeholder="E-mail" formControlName="email_denunciado"></ion-input>
+          </ion-item>
+          <ion-item no-lines>
+              <ion-label></ion-label>
+              <ion-input type="text" placeholder="Irregularidade" formControlName="ponto_principal"></ion-input>
+            </ion-item>
+            <ion-item no-lines>
+                <ion-label></ion-label>
+                <ion-input type="text" placeholder="Comentário" formControlName="comentario"></ion-input>
+              </ion-item>
+        </ion-list>
+        <div class="button-enviar">
+          <button class="btn-enviar" ion-button type="button" (click)="alertInfo()">Enviar</button>
+        </div>
+      </form>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

@@ -1,0 +1,76 @@
+page-estabelecimento {
+
+  .card-map {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    margin: 0 !important;
+    border-radius: 0px;
+  }
+
+  .card-map-content {
+    padding: 0px;
+  }
+
+  .card-round {
+    border-radius: 5px;
+    margin: 10px 5px 10px 5px;
+    height: 80px;
+  }
+
+  .card-1 {
+    background-image: url('../assets/imgs/card-medicamento.png');
+
+  }
+
+  .card-2 {
+    background-image: url('../assets/imgs/card-food.png');
+  }
+
+  .card-3 {
+    background: url('../assets/imgs/card-cosmeticos.png');
+  }
+
+  .card-4 {
+    background: url('../assets/imgs/card-saneantes.png'); 
+    
+  }
+
+  .input-line {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #c8c7cc;
+  }
+
+  .button-search {
+    background: #56C0FF;
+    float: left;
+  }
+
+  
+
+  .card-gardient {
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+    color: #FFF;
+    border-radius: 10px;
+  }
+
+  .card-content-home {
+    font-size: 18px;
+    color: #FFF;
+    padding: 5px 10px 5px 10px;
+  }
+
+  .dado-principal-dashboard {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .dado-dashboard {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 300;
+  }
+
+}
